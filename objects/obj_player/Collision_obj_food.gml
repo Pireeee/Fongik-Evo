@@ -1,1 +1,1 @@
-obj_game.points+=10;
+obj_game.points+=1;
