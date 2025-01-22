@@ -20,17 +20,17 @@ if (obj_game.points < other.points) {
     adjust_scale(other, 0.005);
 } else if (obj_game.points > other.points) {
     obj_game.points += point_increase;
-    other.points -= point_decrease;
+    other.points -= point_decrease * 3.5;
     adjust_scale(obj_player, scale_increase);
     adjust_scale(other, -scale_decrease);
 }
 
 // Vérifier si les points sont tombés à zéro ou en dessous pour chaque instance
-/*
+
 if (obj_game.points <= 0) {
     instance_destroy();  // Détruire le joueur si ses points sont à 0 ou moins
 }
 
 if (other.points <= 0) {
-    other.instance_destroy();  // Détruire l'autre entité si ses points sont à 0 ou moins
-}*/
+    instance_destroy(other);  // Détruire l'autre entité si ses points sont à 0 ou moins
+}
