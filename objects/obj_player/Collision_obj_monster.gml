@@ -4,7 +4,7 @@ point_decrease = 0.5;
 scale_increase = 0.05;
 scale_decrease = 0.01;
 min_scale = 0.1;  // Échelle minimale pour éviter des valeurs négatives
-max_scale = 5.0;  // Échelle maximale pour le contrôle
+max_scale = 7.0;  // Échelle maximale pour le contrôle
 
 // Fonctions pour ajuster les échelles et les points
 function adjust_scale(instance, amount) {

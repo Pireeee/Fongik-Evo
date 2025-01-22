@@ -5,6 +5,7 @@ trail_list = ds_list_create();
 trail_spacing = 5;      // Add new trail position every 5 pixels
 last_trail_x = x;
 last_trail_y = y;
+playerSpeed = 2;
 
-image_xscale = 3
-image_yscale = 3
+image_xscale = 3;
+image_yscale = 3;
