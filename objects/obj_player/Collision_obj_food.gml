@@ -1,4 +1,4 @@
-obj_game.points += 7.5 ;
-image_xscale += 0.010
-image_yscale += 0.010
+obj_game.points += 5 ;
+image_xscale += 0.070
+image_yscale += 0.070
 
