@@ -1,9 +1,8 @@
 // Update camera size dynamically
-// var zoom_factor = 1+(points* 0.002);
+zoom_factor = 1+(points* 0.002);
 
-camera_width = clamp(camera_width, base_width, 2000);
-camera_height = clamp(camera_height, base_height, 2000);
-
+camera_width = clamp(camera_width, 0, 2000);
+camera_height = clamp(camera_height, 0, 2000);
 
 camera_set_view_size(view_camera[0],camera_width,camera_height);
 

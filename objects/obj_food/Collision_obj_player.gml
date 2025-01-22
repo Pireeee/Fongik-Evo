@@ -1,9 +1,8 @@
 instance_destroy();
 
 // Vérifie si le nombre de nourritures est inférieur à 25
-if (instance_number(obj_food) < 25)
+if (instance_number(obj_food) < 180)
 {
-
 
     // Calcule une position x et y aléatoire dans la room
     new_x = random(room_width);
