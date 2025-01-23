@@ -36,6 +36,7 @@
   "resources":[
     {"id":{"name":"fnt_monster","path":"fonts/fnt_monster/fnt_monster.yy",},},
     {"id":{"name":"fnt_score","path":"fonts/fnt_score/fnt_score.yy",},},
+    {"id":{"name":"fnt_win","path":"fonts/fnt_win/fnt_win.yy",},},
     {"id":{"name":"obj_button","path":"objects/obj_button/obj_button.yy",},},
     {"id":{"name":"obj_food","path":"objects/obj_food/obj_food.yy",},},
     {"id":{"name":"obj_game_win","path":"objects/obj_game_win/obj_game_win.yy",},},

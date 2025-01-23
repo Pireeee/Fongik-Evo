@@ -1,5 +1,5 @@
 // Variables
-points = 2500;
+points = 2800;
 base_height = 300;
 base_width = 300;
 camera_width = base_width;

@@ -1,13 +1,11 @@
-if (global.game_won) {
-	draw_set_halign(fa_center);
-	draw_set_valign(fa_middle);
-	draw_set_color(c_white);
-
-	// Semi-transparent overlay effect
-	draw_set_alpha(0.5);
-	draw_rectangle(0, 0, display_get_width(), display_get_height(), false);
-	draw_set_alpha(1);
-
+if(global.game_won) {
 	// Display win message
-	draw_text(display_get_width() / 2, display_get_height() / 2, "You Win!\nPress R to Restart");
+	draw_set_font(fnt_win)
+	draw_set_color(c_green)
+	pointsToInteger = int64(obj_game.points)
+	draw_text(10,10,string(pointsToInteger))
+	draw_text(920,10,string(instance_number(obj_monster)));
+	draw_text(340,400, "VICTORY !");
+	draw_text(340,470, "You are the bigest fongus");	
+	draw_text(340,550, "Press 'R' to reload");
 }
