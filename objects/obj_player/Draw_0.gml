@@ -1,12 +1,15 @@
-// Draw all stored trail positions
+// Début du dessin des positions de trail stockées
 for (var i = 0; i < ds_list_size(trail_list); i++) {
     var pos = trail_list[| i];
     var trail_x = pos[0];
     var trail_y = pos[1];
 
-    // Draw a small yellow rectangle for each trail segment
-    draw_rectangle_color(trail_x - 2, trail_y - 2, trail_x + 2, trail_y + 2, c_yellow, c_yellow, c_yellow, c_yellow, false);
+    // Définir une transparence constante pour tous les segments de trail
+    var alpha = 0.5;  // Par exemple, 50% de transparence pour tous les segments
+
+    // Dessiner un sprite pour chaque segment de trail avec une transparence constante
+    draw_sprite_ext(spr_trail, 0, trail_x, trail_y, 1, 1, 0, c_white, alpha);
 }
 
-// Draw the player
+// Dessiner le joueur
 draw_self();
