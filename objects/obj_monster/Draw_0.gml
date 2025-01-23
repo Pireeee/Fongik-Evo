@@ -9,4 +9,4 @@ pointsToInteger = int64(points)
 var text = string(pointsToInteger);  // Convertir les points en texte
 
 // Dessiner le texte
-draw_text(x + image_xscale, y, text);
+draw_text(x, y, text);
