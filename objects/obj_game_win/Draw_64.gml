@@ -1,7 +1,6 @@
 if(global.game_won) {
 	// Display win message
 	draw_set_font(fnt_win)
-	draw_set_color(c_green)
 	pointsToInteger = int64(obj_game.points)
 	draw_text(10,10,string(pointsToInteger))
 	draw_text(920,10,string(instance_number(obj_monster)));

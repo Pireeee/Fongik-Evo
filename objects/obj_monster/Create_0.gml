@@ -9,8 +9,20 @@ if (random(100) < percentage_small) {
     // Attribuer des points dans la gamme normale pour les autres monstres
     points = random_range(200, 1000);
 }
-points = random_range(100, 1000);
-speed = 0.75
-direction = random(360)
-image_angle = random(360);
-global.game_won = false;
+
+// Set an initial random direction
+direction = random(360);
+speed = 0.75;
+
+// Set the first random direction change
+alarm[0] = irandom_range(60, 180);  // Change direction every 1 to 3 seconds
+
+
+
+// Create a list to store trail positions
+trail_list = ds_list_create();
+
+// Define trail settings
+trail_spacing = 5;      // Add new trail position every 5 pixels
+last_trail_x = x;
+last_trail_y = y;
