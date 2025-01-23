@@ -1,13 +1,15 @@
-sound_choice = random_range(1, 2)
+sound_choice = random(2)
+sound_choice_int = int64(sound_choice)
+show_debug_message(sound_choice)
 
 // Mise à jour des points et des échelles
 if (obj_game.points < other.points) {
 	if !(audio_is_playing(snd_alien_fish2) || audio_is_playing(snd_ghost_chicken2)) && global.game_won == false {
 	
-	if sound_choice == 1 {
-		audio_play_sound(snd_alien_fish2, 1, false)
-	} else {
+	if sound_choice_int == 1 {
 		audio_play_sound(snd_ghost_chicken2, 1, false)
+	} else if sound_choice_int != 1 {
+		audio_play_sound(snd_alien_fish2, 1, false)
 	}
 	
 	}
@@ -15,9 +17,9 @@ if (obj_game.points < other.points) {
     other.points += point_increase;
 } else if (obj_game.points > other.points) && global.game_won == false {
 	if !(audio_is_playing(snd_player_eating_monsters) || audio_is_playing(snd_ghost_chicken)) && global.game_won == false {
-		if sound_choice == 1 {
+		if sound_choice_int == 1 {
 			audio_play_sound(snd_player_eating_monsters, 1, false);
-		} else {
+		} else if sound_choice_int != 1 {
 			audio_play_sound(snd_ghost_chicken, 1, false);
 		}
 	}

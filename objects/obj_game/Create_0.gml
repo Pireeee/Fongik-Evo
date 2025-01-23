@@ -10,3 +10,7 @@ zoom_factor = 1;
 global.game_won = false;
 global.game_lost = false
 global.monster_trails = ds_list_create();
+
+if !audio_is_playing(snd_music) {
+	audio_play_sound(snd_music, 1, false)
+}
