@@ -52,6 +52,7 @@
     {"id":{"name":"snd_blop_mid","path":"sounds/snd_blop_mid/snd_blop_mid.yy",},},
     {"id":{"name":"snd_blop","path":"sounds/snd_blop/snd_blop.yy",},},
     {"id":{"name":"snd_eating","path":"sounds/snd_eating/snd_eating.yy",},},
+    {"id":{"name":"snd_game_win","path":"sounds/snd_game_win/snd_game_win.yy",},},
     {"id":{"name":"snd_player_eating","path":"sounds/snd_player_eating/snd_player_eating.yy",},},
     {"id":{"name":"snd_wet_slurp","path":"sounds/snd_wet_slurp/snd_wet_slurp.yy",},},
     {"id":{"name":"spr_background","path":"sprites/spr_background/spr_background.yy",},},

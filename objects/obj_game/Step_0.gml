@@ -27,5 +27,7 @@ if ((instance_number(obj_monster) == 0 || points > 3000) && !global.game_won) {
     
     // Center camera to show the whole room
     camera_set_view_pos(view_camera[0], room_width / 2 - room_width / 2, room_height / 2 - room_height / 2);
+	
+	audio_play_sound(snd_game_win, 1, false);
 }
 
