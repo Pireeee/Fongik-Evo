@@ -19,7 +19,7 @@ if(!global.game_won){
 }
 
 // Check if all monsters are destroyed or points exceed limit
-if ((instance_number(obj_monster) == 0 || points > 3000) && !global.game_won) {
+if ((instance_number(obj_monster) == 0 || points > 4000) && !global.game_won) {
     global.game_won = true;
     
     // Set the camera to full room size to show everything
@@ -29,3 +29,7 @@ if ((instance_number(obj_monster) == 0 || points > 3000) && !global.game_won) {
     camera_set_view_pos(view_camera[0], room_width / 2 - room_width / 2, room_height / 2 - room_height / 2);
 }
 
+// Incrémentation du compteur si le jeu n'est pas terminé
+if (!global.game_won) {
+    time_counter += 1;
+}

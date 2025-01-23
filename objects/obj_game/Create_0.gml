@@ -9,3 +9,4 @@ target_y = y;
 zoom_factor = 1;
 global.game_won = false;
 global.monster_trails = ds_list_create();
+time_counter = 0;
