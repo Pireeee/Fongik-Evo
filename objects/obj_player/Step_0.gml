@@ -33,6 +33,7 @@ if(!global.game_won){
 		global.game_lost = true
 	    instance_destroy();  // Détruire le joueur si ses points sont à 0 ou moins
 		audio_stop_sound(snd_music)
+		audio_play_sound(snd_game_over, 1, false)
 	}
 }
 
