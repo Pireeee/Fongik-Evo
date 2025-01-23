@@ -33,3 +33,26 @@ if(!global.game_won){
 	    instance_destroy();  // Détruire le joueur si ses points sont à 0 ou moins
 	}
 }
+
+// Ajustement pour tenir compte de toute la largeur du sprite (y compris l'échelle)
+var half_sprite_width_scaled = sprite_get_width(sprite_index) * image_xscale / 2;
+var half_sprite_height_scaled = sprite_get_height(sprite_index) * image_yscale / 2;
+
+// Empêcher le joueur de sortir de la room horizontalement
+if (x < half_sprite_width_scaled) {
+    x = half_sprite_width_scaled;
+} else if (x > room_width - half_sprite_width_scaled) {
+    x = room_width - half_sprite_width_scaled;
+}
+
+// Empêcher le joueur de sortir de la room verticalement
+if (y < half_sprite_height_scaled) {
+    y = half_sprite_height_scaled;
+} else if (y > room_height - half_sprite_height_scaled) {
+    y = room_height - half_sprite_height_scaled;
+}
+
+
+
+
+
