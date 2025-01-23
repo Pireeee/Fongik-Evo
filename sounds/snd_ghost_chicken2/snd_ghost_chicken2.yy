@@ -1,6 +1,6 @@
 {
   "$GMSound":"",
-  "%Name":"snd_eating",
+  "%Name":"snd_ghost_chicken2",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -9,8 +9,8 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":0.496327,
-  "name":"snd_eating",
+  "duration":1.188571,
+  "name":"snd_ghost_chicken2",
   "parent":{
     "name":"Sounds",
     "path":"folders/Sounds.yy",
@@ -19,7 +19,7 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"snd_eating.mp3",
+  "soundFile":"snd_ghost_chicken2.wav",
   "type":0,
-  "volume":0.36,
+  "volume":0.45,
 }

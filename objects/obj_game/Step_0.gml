@@ -1,4 +1,4 @@
-if(!global.game_won){
+if(!global.game_won && !global.game_lost){
 	// Update camera size dynamically based on points
 	zoom_factor = 1 + (points * 0.0005);
 
@@ -27,6 +27,8 @@ if ((instance_number(obj_monster) == 0 || points > 4000) && !global.game_won) {
     
     // Center camera to show the whole room
     camera_set_view_pos(view_camera[0], room_width / 2 - room_width / 2, room_height / 2 - room_height / 2);
+	
+	audio_play_sound(snd_game_win, 1, false);
 }
 
 // Incrémentation du compteur si le jeu n'est pas terminé
