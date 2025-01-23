@@ -1,6 +1,6 @@
 {
   "$GMSound":"",
-  "%Name":"snd_blop",
+  "%Name":"snd_wet_slurp",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -9,8 +9,8 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":0.130612,
-  "name":"snd_blop",
+  "duration":14.393458,
+  "name":"snd_wet_slurp",
   "parent":{
     "name":"Sounds",
     "path":"folders/Sounds.yy",
@@ -19,7 +19,7 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"snd_blop.mp3",
+  "soundFile":"snd_wet_slurp.mp3",
   "type":0,
-  "volume":0.4,
+  "volume":0.52,
 }
