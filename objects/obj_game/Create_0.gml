@@ -8,4 +8,5 @@ target_x = x;
 target_y = y;
 zoom_factor = 1;
 global.game_won = false;
+global.game_lost = false
 global.monster_trails = ds_list_create();

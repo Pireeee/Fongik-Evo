@@ -1,4 +1,4 @@
-if(!global.game_won){
+if(!global.game_won && !global.game_lost){
 	// Update camera size dynamically based on points
 	zoom_factor = 1 + (points * 0.0005);
 

@@ -30,6 +30,7 @@ if(!global.game_won){
 
 	// Vérifier si les points sont tombés à zéro ou en dessous pour chaque instance
 	if (obj_game.points <= 0) {
+		global.game_lost = true
 	    instance_destroy();  // Détruire le joueur si ses points sont à 0 ou moins
 	}
 }
