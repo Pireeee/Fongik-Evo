@@ -7,6 +7,7 @@ last_trail_x = x;
 last_trail_y = y;
 playerSpeed = 2;
 score_decrement = 0.1;
+is_eaten = false;
 
 image_xscale = 3;
 image_yscale = 3;

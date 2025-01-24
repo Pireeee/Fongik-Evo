@@ -66,6 +66,7 @@
     {"id":{"name":"spr_logo","path":"sprites/spr_logo/spr_logo.yy",},},
     {"id":{"name":"spr_monster","path":"sprites/spr_monster/spr_monster.yy",},},
     {"id":{"name":"spr_play_button","path":"sprites/spr_play_button/spr_play_button.yy",},},
+    {"id":{"name":"spr_player_hurt","path":"sprites/spr_player_hurt/spr_player_hurt.yy",},},
     {"id":{"name":"spr_player","path":"sprites/spr_player/spr_player.yy",},},
     {"id":{"name":"spr_trail_monster","path":"sprites/spr_trail_monster/spr_trail_monster.yy",},},
     {"id":{"name":"spr_trail","path":"sprites/spr_trail/spr_trail.yy",},},

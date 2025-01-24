@@ -1,34 +1,43 @@
-sound_choice = random(2)
-sound_choice_int = int64(sound_choice)
-show_debug_message(sound_choice)
+// Random sound choice: 0 or 1
+random_set_seed(date_current_datetime());
+var sound_choice = irandom(1);
+show_debug_message(sound_choice);
 
-// Mise à jour des points et des échelles
+// Determine sound to play based on sound_choice
+var sound_to_play_lose = (sound_choice == 1) ? snd_ghost_chicken2 : snd_ghost_chicken;
+var sound_to_play_win = (sound_choice == 1) ? snd_alien_fish : snd_alien_fish2;
+
+// Exit if the game is won
+if (global.game_won) {
+    return;
+}
+
+// Track player state and handle sprite changes
 if (obj_game.points < other.points) {
-	if !(audio_is_playing(snd_alien_fish2) || audio_is_playing(snd_ghost_chicken2)) && global.game_won == false {
-	
-	if sound_choice_int == 1 {
-		audio_play_sound(snd_ghost_chicken2, 1, false)
-	} else if sound_choice_int != 1 {
-		audio_play_sound(snd_alien_fish2, 1, false)
-	}
-	
-	}
+    var is_sound_playing = audio_is_playing(snd_ghost_chicken) || audio_is_playing(snd_ghost_chicken2);
+    if (!is_sound_playing) {
+        audio_play_sound(sound_to_play_lose, 1, false);
+    }
+
+    // Change player sprite when eaten
+    if (obj_player.sprite_index != spr_player_hurt) {
+        obj_player.sprite_index = spr_player_hurt;
+    }
+
     obj_game.points -= point_decrease;
     other.points += point_increase;
-} else if (obj_game.points > other.points) && global.game_won == false {
-	if !(audio_is_playing(snd_player_eating_monsters) || audio_is_playing(snd_ghost_chicken)) && global.game_won == false {
-		if sound_choice_int == 1 {
-			audio_play_sound(snd_player_eating_monsters, 1, false);
-		} else if sound_choice_int != 1 {
-			audio_play_sound(snd_ghost_chicken, 1, false);
-		}
-	}
+} 
+else if (obj_game.points > other.points) {
+    var is_sound_playing_win = audio_is_playing(snd_alien_fish) || audio_is_playing(snd_alien_fish2);
+    if (!is_sound_playing_win) {
+        audio_play_sound(sound_to_play_win, 1, false);
+    }
+
     obj_game.points += point_increase;
     other.points -= point_decrease * 3.5;
 }
 
+// Destroy the other instance if points reach zero or below
 if (other.points <= 0) {
-    instance_destroy(other);  // Détruire l'autre entité si ses points sont à 0 ou moins
+    with (other) instance_destroy();
 }
-
-

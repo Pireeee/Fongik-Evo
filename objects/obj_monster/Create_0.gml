@@ -12,7 +12,7 @@ if (random(100) < percentage_small) {
 
 // Set an initial random direction
 direction = random(360);
-speed = 0.75;
+speed = random_range(0.5,1.5);
 
 // Set the first random direction change
 alarm[0] = irandom_range(60, 180);  // Change direction every 1 to 3 seconds

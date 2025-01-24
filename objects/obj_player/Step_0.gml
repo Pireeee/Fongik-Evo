@@ -55,6 +55,11 @@ if (y < half_sprite_height_scaled) {
     y = room_height - half_sprite_height_scaled;
 }
 
+// Restore the player sprite when not being eaten
+if (sprite_index != spr_player) {
+    sprite_index = spr_player;
+}
+
 
 
 

@@ -19,7 +19,7 @@ if(!global.game_won && !global.game_lost){
 }
 
 // Check if all monsters are destroyed or points exceed limit
-if ((instance_number(obj_monster) == 0 || points > 4000) && !global.game_won) {
+if ((instance_number(obj_monster) == 0 || points > 10000) && !global.game_won) {
     global.game_won = true;
     
     // Set the camera to full room size to show everything
