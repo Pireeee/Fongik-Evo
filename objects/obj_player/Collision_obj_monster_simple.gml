@@ -36,8 +36,3 @@ else if (obj_game.points > other.points) {
     obj_game.points += point_increase;
     other.points -= point_decrease * 3.5;
 }
-
-// Destroy the other instance if points reach zero or below
-if (other.points <= 0) {
-    with (other) instance_destroy();
-}

@@ -1,18 +1,21 @@
 {
   "$GMObject":"",
-  "%Name":"obj_game_win",
+  "%Name":"obj_monster_simple",
   "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":64,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_game_win",
+  "name":"obj_monster_simple",
   "overriddenProperties":[],
   "parent":{
-    "name":"game",
-    "path":"folders/Objects/game.yy",
+    "name":"monsters",
+    "path":"folders/Objects/monsters.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_monster",
+    "path":"objects/obj_monster/obj_monster.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -30,7 +33,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_monster",
+    "path":"sprites/spr_monster/spr_monster.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

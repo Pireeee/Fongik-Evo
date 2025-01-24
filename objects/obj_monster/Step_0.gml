@@ -17,3 +17,8 @@ if (!global.game_won) {
 } else {
     speed = 0;
 }
+
+// Destroy the other instance if points reach zero or below
+if (points <= 0) {
+    instance_destroy();
+}

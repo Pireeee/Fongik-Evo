@@ -6,7 +6,7 @@ if(global.game_won) {
 	var minutes = floor(time_in_seconds / 60);
 	var seconds = time_in_seconds mod 60;
 	draw_text(10,10,string(pointsToInteger))
-	draw_text(920,10,string(instance_number(obj_monster)));
+	draw_text(920,10,string(instance_number(obj_monster_simple)));
 	draw_text(340,400, "VICTORY !");
 	draw_text(340,470, "You are the bigest fongus");	
 	draw_text(340,550, "Press 'R' to reload");
